@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header, h2 {
+    font-family: 'Mynerve', cursive;
+    padding: 0.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+img {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+#grid-floats {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+#grid-flex {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.grid-item {
+    border: 0.0625rem solid black;
+}
+
+@media (min-width: 320px) {
+    .grid-item:first-child {
+        width: 100%;
+        background-color: #f08080;
+    }
+    .grid-item:nth-child(n+2) {
+        background-color: lightgray;
+        width: 48.5%;
+        margin:0%
+    }
+    img {
+        display: flex;
+        width: 49%;
+        height: auto;
+    }
+}
+
+@media (min-width: 640px) {
+    .grid-item:first-child {
+        width: 49%;
+        background-color: rgb(15, 162, 225);
+    }
+    .grid-item:nth-child(2) {
+        width: 49%;
+        background-color: rgb(15, 162, 225);
+    }
+    .grid-item:nth-child(n+3) {
+        background-color: rgb(188, 97, 159);
+        width: 32.1%;
+    }
+    img {
+        display: flex;
+        width: 49%;
+        height: auto;
+    }
+}
+@media (min-width: 1024px) {
+    .grid-item:first-child {
+        width: 49%;
+        background-color: rgba(6, 97, 56, 0.626);
+    }
+    .grid-item:nth-child(2) {
+        width: 24%;
+        background-color: rgba(87, 49, 175, 0.662);
+    }
+    .grid-item:nth-child(3) {
+        width: 24%;
+        background-color: rgba(87, 49, 175, 0.662);
+    }
+    .grid-item:nth-child(n+4) {
+        background-color: rgba(137, 56, 55, 0.772);
+        width: 24.1%;
+
+    }
+    img {
+        display: flex;
+        width: 49%;
+        height: auto;
+    }
+}
+
+ 
+
+
