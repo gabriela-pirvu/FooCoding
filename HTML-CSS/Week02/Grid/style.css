@@ -27,6 +27,7 @@ img {
 ul {
     text-align: center;
     list-style-position: inside;
+    list-style-type: none;
 }
 
 #grid-floats {
